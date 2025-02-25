@@ -168,7 +168,7 @@ nav {
 }
 .header-title {
   margin-top: 12px;
-  font-size: 36px;
+  font-size: 35px;
   font-weight: 700;
   line-height: 60px;
   text-align: center;
@@ -282,11 +282,25 @@ nav {
     padding-bottom: 90px;
   }
 }
+@media (min-width: 1024px) {
+  .about-product-cards div img {
+    margin-left: 0;
+  }
+  .about-product-cards div h3,
+  .about-product-cards div p {
+    text-align: start;
+  }
+  .about-product-title {
+    margin-bottom: 66px;
+    margin-top: 114px;
+  }
+}
 /* ---- Quick& Easy Process---- */
 .quick-and-easy-process-container {
   background-image: url(./assets/Quick-and-easy-process/background.svg);
   background-repeat: no-repeat;
   background-position: 50% 0%;
+  margin-top: 68px;
 }
 .quick-and-easy-process-paragraph {
   margin-top: 8px;
@@ -294,6 +308,10 @@ nav {
   max-width: 542px;
   margin-right: auto;
   margin-left: auto;
+  font-size: 15px;
+}
+.quick-h2 {
+  font-size: 30px;
 }
 /* 
 justify-content vs aling-items
@@ -379,6 +397,7 @@ aling-items: manevreaza elementele din div pe ox
 .macbook-title-paragraph p {
   margin-bottom: 12px;
   margin-top: 10px;
+  font-size: 15px;
 }
 .macbook-title-paragraph h3 {
   margin-bottom: 12px;
@@ -400,7 +419,7 @@ aling-items: manevreaza elementele din div pe ox
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 150px;
   }
   .first-macbook-image {
     max-width: 540px;
@@ -433,6 +452,7 @@ aling-items: manevreaza elementele din div pe ox
 .first-paragraph-customer {
   margin-bottom: 12px;
   margin-top: 10px;
+  font-size: 15px;
 }
 .first-icon-paragraph {
   display: flex;
@@ -441,6 +461,19 @@ aling-items: manevreaza elementele din div pe ox
 }
 
 @media (min-width: 1024px) {
+  .macbook-title-paragraph p {
+    margin-bottom: 24px;
+  }
+  .section-customer-support h3,
+  .macbook-title-paragraph h3 {
+    margin-bottom: 24px;
+  }
+  .first-paragraph-customer {
+    margin-bottom: 30px;
+  }
+  .second-macbook-image {
+    padding-bottom: 0;
+  }
   .section-customer-support {
     max-width: 486px;
     padding-top: 40px;
@@ -483,6 +516,10 @@ aling-items: manevreaza elementele din div pe ox
 .section-collaborative-container p {
   margin-bottom: 12px;
   margin-top: 10px;
+  font-size: 15px;
+}
+.aiurea {
+  margin-left: 3px;
 }
 .section-collaborative-container {
   max-width: 341px;
@@ -521,6 +558,7 @@ aling-items: manevreaza elementele din div pe ox
 .title-paragraph-strategies p {
   margin-bottom: 28px;
   max-width: 350px;
+  font-size: 15px;
 }
 
 .first-image-contents-strategies img {
@@ -533,14 +571,17 @@ aling-items: manevreaza elementele din div pe ox
 }
 .first-image-contents-strategies p {
   margin-bottom: 10px;
+  text-align: start;
 }
 .first-image-contents-strategies h4 {
+  max-width: 294px;
   font-weight: 700;
   font-size: 24px;
   line-height: 40px;
   margin-bottom: 36px;
-  max-width: 294px;
+  text-align: start;
 }
+
 .second-image-contents-strategies h4 {
   font-weight: 700;
   font-size: 24px;
@@ -548,6 +589,7 @@ aling-items: manevreaza elementele din div pe ox
   margin-bottom: 36px;
   max-width: 290px;
   color: #02897a;
+  text-align: start;
 }
 .second-image-contents-strategies p span {
   font-weight: 700;
@@ -555,6 +597,7 @@ aling-items: manevreaza elementele din div pe ox
 .second-image-contents-strategies p {
   margin-bottom: 10px;
   max-width: 350px;
+  text-align: start;
 }
 .second-image-contents-strategies img {
   margin-bottom: 20px;
@@ -565,8 +608,9 @@ aling-items: manevreaza elementele din div pe ox
   font-weight: 700;
   font-size: 24px;
   line-height: 40px;
-  margin-bottom: 98px;
+  margin-bottom: 61px;
   max-width: 294px;
+  text-align: start;
 }
 .third-image-contents-strategies p span {
   font-weight: 700;
@@ -574,6 +618,7 @@ aling-items: manevreaza elementele din div pe ox
 .third-image-contents-strategies p {
   margin-bottom: 10px;
   max-width: 350px;
+  text-align: start;
 }
 .third-image-contents-strategies img {
   margin-bottom: 20px;
@@ -594,7 +639,9 @@ aling-items: manevreaza elementele din div pe ox
   .title-paragraph-strategies p {
     max-width: 693px;
   }
-
+  .title-paragraph-strategies {
+    margin-top: 110px;
+  }
   .first-image-contents-strategies {
     border: 2px solid #dedede;
     width: 100%;
@@ -667,18 +714,18 @@ aling-items: manevreaza elementele din div pe ox
   .first-image-contents-strategies {
     text-align: center;
   }
-  .first-image-contents-strategies h4 {
+  /* .first-image-contents-strategies h4 {
     max-width: 1100px;
-  }
+  } */
   .second-image-contents-strategies {
     text-align: center;
   }
   .second-image-contents-strategies p {
     max-width: 1100px;
   }
-  .second-image-contents-strategies h4 {
+  /* .second-image-contents-strategies h4 {
     max-width: 1100px;
-  }
+  } */
   .third-image-contents-strategies {
     text-align: center;
   }
@@ -693,6 +740,11 @@ aling-items: manevreaza elementele din div pe ox
 /*  Price table  */
 .price-table-section {
   text-align: center;
+}
+@media (min-width: 1024px) {
+  .price-table-section {
+    margin-top: 120px;
+  }
 }
 .price-table-section h3 {
   font-weight: 700;
@@ -818,7 +870,7 @@ aling-items: manevreaza elementele din div pe ox
   height: 456px;
   border-radius: 8px;
   padding-bottom: 10px;
-  margin-bottom: 100px;
+  margin-bottom: 88px;
 }
 .third-card-price h6 {
   font-weight: 700;
@@ -849,8 +901,28 @@ aling-items: manevreaza elementele din div pe ox
   }
 }
 @media (min-width: 1024px) {
-  .price-table-section {
+  .sub-title {
+    margin-bottom: 50px;
+  }
+  .angura {
     display: flex;
+  }
+  .first-card-price {
+    margin-bottom: 0px;
+    padding-bottom: 0;
+    margin-right: 70px;
+  }
+  .second-card-price {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    margin-right: 70px;
+  }
+  .third-card-price {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .card-section-price {
+    margin-bottom: 150px;
   }
 }
 /* What Clients Say  */
@@ -860,4 +932,293 @@ aling-items: manevreaza elementele din div pe ox
   max-width: 327px;
   border-radius: 5px;
   border-width: 1px;
+  max-height: 236px;
+  margin-bottom: 32px;
+}
+.same-paragraph {
+  max-width: 275px;
+  max-height: 84px;
+  margin-top: 16px;
+}
+.avatar-designer {
+  display: flex;
+  gap: 14px;
+  text-align: center;
+  margin-top: 16px;
+}
+.avatar-designer h6 {
+  width: 89px;
+  height: 24px;
+  color: var(--green);
+}
+.avatar-designer h6 p {
+  max-width: 64px;
+  max-height: 24px;
+  font-size: 14px;
+  text-align: start;
+}
+.clients-paragraph {
+  margin-bottom: 50px;
+  margin-top: 8px;
+  max-width: 323px;
+}
+.br {
+  display: none;
+}
+.same-paragraph-loco {
+  max-width: 275px;
+  max-height: 84px;
+  margin-top: 16px;
+  color: #737373;
+}
+.all-product-card {
+  margin-left: auto;
+  margin-right: auto;
+}
+.hide-name {
+  display: none;
+}
+
+@media (min-width: 441px) {
+  .all-product-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .clients-paragraph {
+    margin-bottom: 50px;
+  }
+}
+@media (min-width: 1024px) {
+  .br {
+    display: block;
+  }
+  .amigo {
+    display: flex;
+  }
+  .card-designer {
+    margin-bottom: 0;
+  }
+  .second-card-designer {
+    margin-right: 60px;
+    margin-left: 60px;
+  }
+  .hide-name-second {
+    display: none;
+  }
+  .hide-name-third {
+    display: none;
+  }
+  .hide-name {
+    display: block;
+  }
+  .first-card-p {
+    color: #737373;
+  }
+  .clients {
+    margin-bottom: 8px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .clients-paragraph {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 50px;
+    max-width: 537px;
+  }
+}
+/* Join 100 Compannies Product */
+.join-100-container {
+  background-color: var(--green);
+  width: 371px;
+  height: 688px;
+  border-radius: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.join-100-container h5 {
+  font-weight: 600;
+  font-size: 32px;
+  text-align: center;
+  width: 328px;
+  height: 144px;
+  color: var(--white);
+  margin-top: 2px;
+}
+.join-100-container img {
+  width: 351px;
+  height: 331px;
+  border-radius: 5px;
+}
+.join-button {
+  background-color: var(--white);
+  color: var(--green);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: 104px;
+}
+@media (min-width: 1024px) {
+  .join-100-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 968px;
+    height: 345px;
+    align-content: space-around;
+    margin-top: 150px;
+    margin-bottom: 150px;
+  }
+  .join-button {
+    margin-top: 0px;
+    width: 150px;
+    height: 50px;
+    border-radius: 8px;
+    margin-right: 330px;
+  }
+  .join-100-container h5 {
+    text-align: start;
+    width: 510px;
+    height: 92px;
+    margin-left: 26px;
+  }
+}
+/* FOOTER */
+.footer-logo-container {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  margin-bottom: 24px;
+  margin-top: 100px;
+}
+.footer-logo-container img {
+  width: 32px;
+  height: 30px;
+}
+.footer-logo-container h3 {
+  width: 114px;
+  height: 21px;
+  color: #173a56;
+  font-size: 30px;
+  line-height: 28px;
+}
+.insta-fb-tw-container {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+.insta-fb-tw-container img {
+  width: 40px;
+  height: 40px;
+  background: #edfffc;
+  border-radius: 10%;
+}
+.resource-container h6 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  margin-bottom: 8px;
+  margin-top: 32px;
+}
+.resource-container ul {
+  list-style: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 35px;
+  text-align: center;
+}
+.legal-stuff-container h6 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  margin-bottom: 8px;
+  margin-top: 32px;
+}
+.legal-stuff-container ul {
+  list-style: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 35px;
+  text-align: center;
+}
+.knowig-paragraph {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  width: 280px;
+  height: 57px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 34px;
+  margin-bottom: 34px;
+}
+.button-input-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 21px;
+}
+.button-input-footer input {
+  width: 325px;
+  height: 48px;
+}
+.button-input-footer button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+}
+.made-product {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  max-width: 361px;
+  width: 100%;
+  height: 30px;
+  margin-bottom: 45px;
+  margin-top: 45px;
+}
+@media (min-width: 1024px) {
+  .section-footer-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .logo-insta-container {
+    width: 162px;
+    height: 94px;
+  }
+  .footer-logo-container {
+    margin-top: 0;
+  }
+  .resource-container h6,
+  .legal-stuff-container h6,
+  .made-product {
+    margin-top: 0px;
+  }
+  .knowig-paragraph {
+    margin-top: 0px;
+    text-align: start;
+  }
+  .button-input-footer input {
+    max-width: 325px;
+    width: 100%;
+    height: 48px;
+  }
+  .button-input-footer {
+    align-items: start;
+  }
+  .resource-container ul,
+  .legal-stuff-container ul,
+  .legal-stuff-container h6 {
+    text-align: start;
+  }
 }
